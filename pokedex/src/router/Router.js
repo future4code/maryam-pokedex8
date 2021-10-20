@@ -1,11 +1,14 @@
 import { BrowserRouter, Switch, Route} from "react-router-dom";
-import HomePage from "../pages/HomePage";
-import PokedexPage from "../pages/PokedexPage"
-import DetailsPage from "../pages/DetailsPage"
+import Header from "../pages/Header/Header";
+import HomePage from "../pages/HomePage/HomePage";
+import PokedexPage from "../pages/Pokedex/PokedexPage"
+import DetailsPage from "../pages/DetailsPage/DetailsPage"
 
 export const Router = () => {
     return (
         <BrowserRouter>
+            <Header />
+            <hr/>
             <Switch>
                 <Route exact path={"/"}>
                     <HomePage />
@@ -13,7 +16,7 @@ export const Router = () => {
                 <Route exact path={"/pokedex"}>
                     <PokedexPage />
                 </Route>
-                <Route exact path={"/details/:pokemon"}>
+                <Route exact path={"/details/:nome"}>
                     <DetailsPage />
                 </Route>
             </Switch>
