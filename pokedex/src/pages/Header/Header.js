@@ -11,11 +11,11 @@ import { useHistory } from "react-router";
 // import PokedexPage from "../Pokedex/PokedexPage";
 
 const Header = () => {
-    const [value, setValue] = React.useState("1");
+    // const [value, setValue] = React.useState("1");
 
-    const handleChange = (event, newValue) => {
-        setValue(newValue);
-    };
+    // const handleChange = (event, newValue) => {
+    //     setValue(newValue);
+    // };
 
     const history = useHistory();
     

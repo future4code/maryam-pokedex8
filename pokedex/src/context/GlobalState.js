@@ -3,19 +3,18 @@ import { GlobalContext } from "./GlobalContext";
 import useRequestData from "../hooks/useRequestData";
 
 export default function GlobalState(props) {
+    const [pokedex, setPokedex] = useState([]);
+
     const pokeList = useRequestData(
         "https://pokeapi.co/api/v2/pokemon?limit=20",
         {}
     );
 
-  // const pokemons = pokeList.results &&
-  //   pokeList.results.map((poke) => {
-  //   <{poke.name}> <{poke.id}>
-  // })
+    console.log("pokedex", pokedex)
 
     return (
         <div>
-            <GlobalContext.Provider value={{ pokeList }}>
+            <GlobalContext.Provider value={{ pokeList, pokedex, setPokedex }}>
                 {props.children}
             </GlobalContext.Provider>
         </div>

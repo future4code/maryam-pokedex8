@@ -9,8 +9,8 @@ const PokemonCard = (props) => {
   return (
       <HomeContainer>
         {pokeList.results && pokeList.results.map((pokemon) => (
-      <PokemonInfo pokemon={pokemon} key={pokemon.name} />
-    ))}
+          <PokemonInfo pokemon={pokemon} key={pokemon.name} />
+        ))}
       </HomeContainer>
   );
 };
