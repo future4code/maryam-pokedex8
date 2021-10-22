@@ -4,7 +4,7 @@ import PokedexCard from "./PokedexCard";
 const PokedexPage = () => {
     return (
         <div>
-        <PokedexCard />
+            <PokedexCard />
         </div>
     );
 };

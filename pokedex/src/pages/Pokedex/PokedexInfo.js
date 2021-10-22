@@ -15,22 +15,17 @@ const PokedexInfo = (props) => {
     const [img, setImg] = useState([]);
     const {pokedex, setPokedex} = useContext(GlobalContext);
 
-    // const pokemon = useRequestData(`https://pokeapi.co/api/v2/pokemon/${props.pokemon.name}`, {})
+    const handleRemovePokemon = (id) => {
+        const filteredPokedex = pokedex.filter((poke) => poke.id !== id);
+        setPokedex(filteredPokedex);
+    };
 
     useEffect(() => {
         axios.get(`https://pokeapi.co/api/v2/pokemon/${props.pokemon.name}`).then((res) => {
         setId(res.data.id);
         setImg(res.data.sprites.front_default);
-        // setType(res.data.types.type)
-        // console.log(type)
         });
     }, [pokedex]);
-
-    const removePokemon = (index) => {
-        let newPokedex = [...pokedex];
-        newPokedex.splice(index, 1)
-        setPokedex([newPokedex])
-        }
 
     const history = useHistory();
 
@@ -49,7 +44,11 @@ const PokedexInfo = (props) => {
                     <Typography variant="h6">{props.pokemon.name}</Typography>
                 </PokeInfoContainer>
                 <ButtonsCard>
-                    <Button size="small" variant="outlined" onClick={() => removePokemon(props.index)}>
+                    <Button 
+                    size="small" 
+                    variant="outlined" 
+                    onClick={() => handleRemovePokemon(id)}
+                    >
                         Remover
                     </Button>
                     <Button 

@@ -13,15 +13,15 @@ const PokemonInfo = (props) => {
     const [id, setId] = useState("");
     const [img, setImg] = useState([]);
     const { pokedex, setPokedex } = useContext(GlobalContext);
+    const [ pokeCaptured, setPokeCaptured ] = useState(false);
 
     useEffect(() => {
         axios.get(props.pokemon.url).then((res) => {
             setId(res.data.id);
             setImg(res.data.sprites.front_default);
-        // setType(res.data.types.type)
-        // console.log(type)
             });
-    }, []);
+    }, [pokedex]);
+
 
     const addToPokedex = (id) => {
         const capturePoke = {
@@ -30,7 +30,15 @@ const PokemonInfo = (props) => {
         };
         const sendToPokedex = [...pokedex, capturePoke];
         setPokedex(sendToPokedex);
+        setPokeCaptured(true);
         alert(`${props.pokemon.name} foi capturado!`);
+        setPokeCaptured(true)
+    };
+
+    const handleRemovePokemon = (id) => {
+        const filteredPokedex = pokedex.filter((poke) => poke.id !== id);
+        setPokedex(filteredPokedex);
+        setPokeCaptured(false);
     };
 
     const history = useHistory();
@@ -49,13 +57,21 @@ const PokemonInfo = (props) => {
                     <Typography variant="h6">{props.pokemon.name}</Typography>
                 </PokeInfoContainer>
                 <ButtonsCard>
-                    <Button
+                    { !pokeCaptured ? <Button
                         onClick={() => addToPokedex(id)}
                         size="small"
                         variant="outlined"
                     >
                         Capturar
-                    </Button>
+                    </Button> : <Button 
+                                    size="small" 
+                                    variant="contained" 
+                                    color="error"
+                                    onClick={() => handleRemovePokemon(id)}
+                                    >
+                                        Remover
+                                </Button> }
+                    
                     <Button
                         size="small" 
                         variant="outlined" 
