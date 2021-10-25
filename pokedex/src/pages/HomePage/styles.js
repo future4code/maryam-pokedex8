@@ -1,8 +1,27 @@
 import styled from "styled-components";
 
+export const BackgroundBottom = styled.div`
+    background-image: url('https://i.ibb.co/0cNc8P7/pokeball.png');
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    width: 100%;
+    background-size: 400px;
+    position: relative;
+` 
+
+export const BackgroundTop = styled.div`
+    background-image: url('https://i.ibb.co/0cNc8P7/pokeball.png');
+    background-repeat: no-repeat;
+    background-position: left top;
+    width: 100%;
+    background-size: 400px;
+    position: relative;
+` 
+
 export const HomeBox =  styled.div`
     display: flexbox;
     justify-content: center;
+    min-height : 500px;
 ` 
 
 export const HomeContainer = styled.div`

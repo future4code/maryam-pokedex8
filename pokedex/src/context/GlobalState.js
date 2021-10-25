@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { GlobalContext } from "./GlobalContext";
-import useRequestData from "../hooks/useRequestData";
 import axios from "axios";
 
 export default function GlobalState(props) {

@@ -4,11 +4,11 @@ export const DivDetails = styled.div`
     display: flex;
     justify-content: center;
     height: 100vh;
-    background-color: #FFFFFF;
-`
+`;
 export const DivImage = styled.div`
-    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
-    border: 2px solid #CECECE;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px;
+    border: 2px solid #cecece;
+    background-color: white;
     border-radius: 360px;
     height: 22vh;
     max-height: 22vh;
@@ -22,138 +22,150 @@ export const DivImage = styled.div`
         max-width: 100%;
         border-radius: 360px;
     }
-`
+`;
 export const DivCardDetails = styled.div`
-    background-color: #FFFF;
-    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    background-color: #ffff;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+        rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
     height: 80vh;
-    width: 50vw;
+    width: 40vw;
     margin: 90px 10px 8px 10px;
-
+    border-radius: 8px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-`
+`;
 export const NumPoke = styled.p`
-    color: #B7B7B7;
-    font-size: 3.5vh;
-    margin:0;
-    margin-top: 22px;
-`
+    color: #b7b7b7;
+    font-size: 3.2vh;
+    margin: 0;
+    margin-top: 54px;
+`;
 export const NamePoke = styled.p`
     font-size: 5vh;
     margin: 4px 0;
-`
+    font-weight: 600;
+`;
 export const DivTypes = styled.div`
     display: flex;
     justify-content: space-evenly;
-    padding: 4px;
-    width: 50%;
-    align-items: center;
+    width: 25%;
 
     p {
         border-radius: 8px;
         padding: 4px;
         margin: 2px 0;
-        background-color: #FADE4D;
-        color: #EA3434;
+        background-color: #fade4d;
+        color: #ea3434;
         padding: 6px;
-        font-size: 100%;
-        font-weight: 600
+        font-size: 10px;
+        font-weight: 600;
     }
-`
+`;
 export const DivHeightWeight = styled.div`
     display: flex;
     justify-content: space-around;
-    width: 60%;
-`
+    width: 28%;
+
+    p {
+        font-weight: 550;
+        color: #ea3434;
+    }
+`;
 export const DivValues = styled.div`
     display: grid;
     place-items: center;
     grid-template-columns: 1fr 1fr;
-    width: 60%;
+    width: 28%;
     p {
-        border: 2px solid gray;
-        border-radius: 8px;
-        padding: 4px;
+        border: 1px solid gray;
+        border-radius: 6px;
+        padding: 8px;
         margin: 2px 0;
-        width: 2.5vw;
-        display: grid;
-        place-content: center;
+        margin-top: -10px;
+        font-weight: 550;
     }
-`
+`;
 export const DivStats = styled.div`
     display: grid;
     place-items: center;
-    grid-template-columns: repeat(6,1fr);
+    grid-template-columns: repeat(6, 1fr);
     font-size: 2.5vh;
-    width: 95%;
+    width: 75%;
 
     div {
-        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
         padding: 4px;
-        height: 36px;
-        width: 36px;
-        border-radius: 360px;
-    
+        height: 40px;
+        width: 40px;
+        border-radius: 300px;
         display: grid;
         place-items: center;
     }
-`
+`;
 export const DivHp = styled.div`
-    background-color: #EA3434;
-`
+    background-color: #ea3434;
+    padding: 8px;
+    font-weight: 550;
+`;
 export const DivAtk = styled.div`
-    background-color: #FAA04D;
-`
+    background-color: #faa04d;
+    padding: 8px;
+    font-weight: 550;
+`;
 export const DivDef = styled.div`
-    background-color: #FADE4D;
-`
+    background-color: #fade4d;
+    padding: 8px;
+    font-weight: 550;
+`;
 export const DivSpA = styled.div`
-    background-color: #4DFAD0;
-`
+    background-color: #4dfad0;
+    padding: 8px;
+    font-weight: 550;
+`;
 export const DivSpD = styled.div`
-    background-color: #A8EF95;
-`
+    background-color: #a8ef95;
+    padding: 8px;
+    font-weight: 550;
+`;
 export const DivSPD = styled.div`
-    background-color: #FB94A8;
-`
+    background-color: #fb94a8;
+    padding: 8px;
+    font-weight: 550;
+`;
 export const DivTot = styled.div`
-    background-color: #8798D5;
-`
+    background-color: #8798d5;
+    padding: 8px;
+    font-weight: 550;
+`;
 export const DivValuesStats = styled.div`
     display: grid;
     place-items: center;
-    grid-template-columns: repeat(6,1fr);
+    grid-template-columns: repeat(6, 1fr);
     font-size: 2.5vh;
-    width: 95%;
+    width: 75%;
 
-    p{
-        background-color: #E5E5E5;
+    p {
+        background-color: #e5e5e5;
         margin: 8px 0;
         height: 30px;
         width: 40px;
-        border-radius: 360px;
+        border-radius: 460px;
         display: grid;
         place-items: center;
-        box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
     }
-`
+`;
 export const DivMoves = styled.div`
     display: flex;
     justify-content: space-around;
-    width: 95%;
+    align-items: center;
+    width: 85%;
     margin-top: 8px;
-    background-color: #E5E5E5;
-    height: 8vh;
-    width: 80%;
-    border-radius: 20px;
-    
-    div{
+
+    div {
         display: flex;
         justify-content: space-around;
         width: 60%;
         margin-left: 10px;
     }
-`
+`;

@@ -5,7 +5,7 @@ import { GlobalContext } from "../../context/GlobalContext";
 
 const PokemonCard = (props) => {
   const { pokemons } = useContext(GlobalContext);
-  
+
   return (
     <HomeContainer>
       {pokemons &&

@@ -1,11 +1,12 @@
 import React from "react";
 import PokedexCard from "./PokedexCard";
+import { HomeBox } from "./styles";
 
 const PokedexPage = () => {
     return (
-        <div>
+        <HomeBox>
             <PokedexCard />
-        </div>
+        </HomeBox>
     );
 };
 

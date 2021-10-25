@@ -36,6 +36,7 @@ export const CardContainer = styled.div`
 `;
 
 export const DivImage = styled.div`
+    /* box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px; */
     border: 1px solid #E5E5E5;
     border-radius: 360px;
     height: 18vh;
@@ -73,3 +74,21 @@ export const DivTypes = styled.div`
         font-weight: 600
     }
 `
+
+export const ButtonStyle = styled.div`
+    border-radius: 5px;
+    padding: 8px;
+    font-size: 12px;
+    background-color: #FA4D4D;
+    color: white;
+    cursor: pointer;
+` 
+
+export const ButtonDetailsStyle = styled.div`
+    border: 1px solid #FA4D4D;
+    border-radius: 5px;
+    padding: 8px;
+    font-size: 12px;
+    color: #FA4D4D;
+    cursor: pointer;
+` 
