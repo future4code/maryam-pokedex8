@@ -1,16 +1,13 @@
 # POKEDEX
 
 Nome dos integrantes: 
-- Pessoa 1
-- Pessoa 2
-- Pessoa 3
+- Élida Nunes
+- Julia Cortez
 
-Link do Surge: www.link.com.br
+Link do Surge: https://gabby-metal.surge.sh/
 
 O que funciona:
-- Item 1
-- Item 2
+- Home, Pokedex, Detalhes
 
 O que não funciona: 
-- Item 3
-- Item 4
+- Nada
