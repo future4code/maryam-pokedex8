@@ -1,16 +1,10 @@
 import styled from "styled-components";
 
-export const HomeBox =  styled.div`
-    display: flexbox;
-    justify-content: center;
-` 
-
 export const HomeContainer = styled.div`
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-column-gap: 30px;
     grid-row-gap: 30px;
-    justify-content: center;
 `;
 
 export const PokePic = styled.img`
@@ -40,3 +34,42 @@ export const CardContainer = styled.div`
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
 `;
+
+export const DivImage = styled.div`
+    border: 1px solid #E5E5E5;
+    border-radius: 360px;
+    height: 18vh;
+    max-height: 22vh;
+    max-width: 10vw;
+    width: 8vw;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+
+    img {
+        object-fit: fill;
+        max-height: 100%;
+        width: 90%;
+        max-width: 100%;
+        border-radius: 360px;
+    }
+`
+
+export const DivTypes = styled.div`
+    display: flex;
+    justify-content: space-evenly;
+    padding: 4px;
+    width: 130px;
+    align-items: center;
+
+    p {
+        border-radius: 8px;
+        padding: 4px;
+        margin: 2px 0;
+        background-color: #FADE4D;
+        color: #EA3434;
+        padding: 6px;
+        font-size: 10px;
+        font-weight: 600
+    }
+`

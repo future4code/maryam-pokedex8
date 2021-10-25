@@ -4,7 +4,7 @@ export const DivDetails = styled.div`
     display: flex;
     justify-content: center;
     height: 100vh;
-    background-color: #E5E5E5;
+    background-color: #FFFFFF;
 `
 export const DivImage = styled.div`
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
@@ -48,13 +48,19 @@ export const NamePoke = styled.p`
 export const DivTypes = styled.div`
     display: flex;
     justify-content: space-evenly;
-    width: 40%;
+    padding: 4px;
+    width: 50%;
+    align-items: center;
 
     p {
-        border: 2px solid gray;
         border-radius: 8px;
         padding: 4px;
         margin: 2px 0;
+        background-color: #FADE4D;
+        color: #EA3434;
+        padding: 6px;
+        font-size: 100%;
+        font-weight: 600
     }
 `
 export const DivHeightWeight = styled.div`
@@ -72,6 +78,9 @@ export const DivValues = styled.div`
         border-radius: 8px;
         padding: 4px;
         margin: 2px 0;
+        width: 2.5vw;
+        display: grid;
+        place-content: center;
     }
 `
 export const DivStats = styled.div`
@@ -136,6 +145,10 @@ export const DivMoves = styled.div`
     justify-content: space-around;
     width: 95%;
     margin-top: 8px;
+    background-color: #E5E5E5;
+    height: 8vh;
+    width: 80%;
+    border-radius: 20px;
     
     div{
         display: flex;

@@ -8,7 +8,6 @@ export const Router = () => {
     return (
         <BrowserRouter>
             <Header />
-            <hr/>
             <Switch>
                 <Route exact path={"/"}>
                     <HomePage />

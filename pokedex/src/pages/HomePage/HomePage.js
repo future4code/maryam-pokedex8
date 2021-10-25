@@ -1,14 +1,13 @@
 import React, { useContext } from "react";
 import PokemonCard from "./PokemonCard";
-import { HomeContainer } from "./styles";
+import { HomeContainer, HomeBox } from "./styles";
 
 const HomePage = () => {
-    
     return (
-        <HomeContainer>
+        <HomeBox>
             <PokemonCard />
-        </HomeContainer>
-    )
-}
+        </HomeBox>
+    );
+};
 
 export default HomePage;

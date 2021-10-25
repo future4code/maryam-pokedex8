@@ -5,6 +5,7 @@ export const HomeContainer = styled.div`
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-column-gap: 30px;
     grid-row-gap: 30px;
+    margin: 0px 80px;
 `;
 
 export const PokePic = styled.img`

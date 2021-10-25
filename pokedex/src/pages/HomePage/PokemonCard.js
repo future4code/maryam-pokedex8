@@ -1,17 +1,16 @@
-import React, { useContext }from "react";
-import PokemonInfo from "./PokemonInfo";
+import React, { useContext } from "react";
+import PokemonInfo from "../../components/PokemonInfo";
 import { HomeContainer } from "./styles";
 import { GlobalContext } from "../../context/GlobalContext";
 
 const PokemonCard = (props) => {
-  const { pokeList } = useContext(GlobalContext);
-
+  const { pokemons } = useContext(GlobalContext);
+  
   return (
-      <HomeContainer>
-        {pokeList.results && pokeList.results.map((pokemon) => (
-          <PokemonInfo pokemon={pokemon} key={pokemon.name} />
-        ))}
-      </HomeContainer>
+    <HomeContainer>
+      {pokemons &&
+        pokemons.map((poke) => <PokemonInfo poke={poke} key={poke.name} />)}
+    </HomeContainer>
   );
 };
 
